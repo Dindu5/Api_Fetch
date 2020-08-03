@@ -4,22 +4,24 @@ window.addEventListener('load', function () {
     loader.classList.add('done');
     console.log('loading done');
 
+});
+// Api Implementation takes place here
+// i set the whole api url to url
+// The API is called through the function 'makeactivity()' 
+//which is initialised on called on button press
+url = 'https://www.boredapi.com/api/activity?type=recreational';
 
-    // Api Implementation takes place here
-    // i set the whole api url to 'url'
-    // The API is called through the function 'makeactivity()' which is initialised on called on button press
-    url = 'https://www.boredapi.com/api/activity?type=recreational';
-    function makeactivity() {
-        fetch(url)
-            // API data is fetched as a promise but this line of code changes it to json format for easier manipulation 
-            .then((data) => data.json())
-            // Json data is set as a parameter to the function 'block()'
-            .then((activity) => block(activity));
+function makeactivity() {
+    fetch(url)
+        // API data is fetched as a promise but this line of code changes it to json format for easier manipulation 
+        .then((data) => data.json())
+        // Json data is set as a parameter to the function 'block()'
+        .then((activity) => block(activity));
 
-        const block = (data) => {
-            // the block() function simply creates html elements using the json data values in ` `
-            console.log(data)
-            const html = `
+    const block = (data) => {
+        // the block() function simply creates html elements using the json data values in ` `
+        console.log(data)
+        const html = `
             <h5 class="heading">Here's an activity for you</h5>
             <p id="activity_title">- ${data.activity}</p>
             <p>Activity type : ${data.type}</p>
@@ -27,11 +29,11 @@ window.addEventListener('load', function () {
             <p>Here's a link to the activity &nbsp;<a href="">${data.link}</a></p>
             <p class="other">Have Fun!!!</p>
             `
-            const activityBlock = document.querySelector('#activity_card')
-            activityBlock.innerHTML = html
-        }
+        const activityBlock = document.querySelector('#activity_card')
+        activityBlock.innerHTML = html
     }
-});
+}
+
 
 
 // This contains the function that fulls out the navigation on smaller screens
