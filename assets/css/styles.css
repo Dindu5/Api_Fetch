@@ -173,13 +173,13 @@ header {
     position: relative;
     background-color: #212121;
 	flex-wrap: wrap;
-    height: 60vh;
+    height: 70vh;
     width: 400px;
     border-radius: 5px;
     border: 1px solid #14ffec;
 }
 .description {
-    height: 30vh;
+    height: 35vh;
     background-image: url(../images/1.jpg);
     transition: all 0.6s;
     background-size: cover;
@@ -220,14 +220,15 @@ button:hover, button:focus, button:active {
     cursor: pointer;
 }
 .content{
-    height: 50%;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-items: center;
 }
 #activity_card {
     background-color: #ffffff0c;
-    height: 22vh;
+    height: 27vh;
     border-left: 0.4rem solid #14ffec;
     margin: 0.5rem 1rem;
     padding: 0.7rem 0.9rem;
@@ -432,7 +433,7 @@ button:hover, button:focus, button:active {
         padding: 0.4rem 0.8rem;
     }
     .logo {
-        fontsize: small;
+        font-size: small;
     }
     
 }

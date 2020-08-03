@@ -60,6 +60,12 @@ function toggleMenu() {
     }
 
 }
+const activeBtn = document.querySelector('.button');
+activeBtn.addEventListener('click', changeContent)
+
+function changeContent() {
+    activeBtn.innerHTML = 'Get Another'
+}
 // This is to hide the navigation when the button is clicked on
 const link = document.querySelector('.nav-link');
 
