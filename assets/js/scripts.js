@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
 // Api Implementation takes place here
 // i set the whole api url to url
 // The API is called through the function 'makeactivity()' 
-//which is initialised on called on button press
+// which is initialised or called on button press
 url = 'https://www.boredapi.com/api/activity?type=recreational';
 
 function makeactivity() {
