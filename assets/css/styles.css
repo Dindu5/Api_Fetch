@@ -115,6 +115,7 @@ header {
 .logo {
     font-weight: 600;
     font-family: 'Yatra One', cursive;
+    text-shadow:0.1px 0.1px 10px #08635b;
 }
 .nav-link {
     font-size: 0.9rem;
@@ -171,7 +172,6 @@ header {
 .landing-area {
     position: relative;
     background-color: #212121;
-    box-sizing: 1px 2px 10px #ffffff;
 	flex-wrap: wrap;
     height: 60vh;
     width: 400px;
@@ -284,7 +284,8 @@ button:hover, button:focus, button:active {
 /* ================================= */
 
 #footer {
-	bottom: 0;
+    bottom: 0;
+    text-shadow:0.1px 0.1px 10px #08635b;
 }
 /* ============================================= */
 /* ==== MEDIA QUERIES / RESPONSIVE VIEWS ======= */
@@ -365,6 +366,9 @@ button:hover, button:focus, button:active {
     #activity_card p {
         font-size: 0.7rem;
     }
+    #footer {
+        font-size : small;
+    }
     
 }
 
@@ -403,15 +407,15 @@ button:hover, button:focus, button:active {
         
     }
     .heading {
-        margin-bottom: 0.5rem;
-        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+        font-size: 0.75rem;
     }
     #activity_card p {
         font-size: 0.7rem;
     }
     #activity_title {
-        font-size: 0.9rem !important;
-        margin-bottom: 0.4rem !important;
+        font-size: 0.8rem !important;
+        margin-bottom: 0rem !important;
     }
     #activity_card a {
         color: #0d7377;
@@ -427,4 +431,8 @@ button:hover, button:focus, button:active {
         font-size: 0.7rem;
         padding: 0.4rem 0.8rem;
     }
+    .logo {
+        fontsize: small;
+    }
+    
 }
