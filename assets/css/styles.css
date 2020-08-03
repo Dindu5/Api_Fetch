@@ -1,5 +1,6 @@
 /* ==== THIS IS THE MAIN STYLE SHEET FOR GET ACTIVITY ==== */
 
+/* ========== GENERAL STYLING ============= */
 * {
 	margin: 0;
     padding: 0;
@@ -34,7 +35,7 @@ body {
     background-color: #212121;
     transition: all 0.8s;
 }
-
+/* ===== Preloader animation ====== */
 .lds-ellipsis {
     display: inline-block;
     position: relative;
@@ -156,8 +157,10 @@ header {
 	background: rgb(1, 33, 44);
 	transition: all 0.6s;
 }
+/* ================================= */
+/* ========= MAIN CONTENT ========== */
+/* ================================= */
 
-/* === SECTION  === */
 #main {
     display: flex;
     justify-content: center;
@@ -275,13 +278,18 @@ button:hover, button:focus, button:active {
     color: #525252;
 }
 
+/* ================================= */
+/* ============ FOOTER ============= */
+/* ================================= */
+
 #footer {
 	position: sticky;
 	bottom: 0;
 	z-index: -1;
 }
-
-/* == RESPONSIVE == */
+/* ============================================= */
+/* ==== MEDIA QUERIES / RESPONSIVE VIEWS ======= */
+/* ============================================= */
 
 @media screen and (max-width: 760px) {
 	body {
